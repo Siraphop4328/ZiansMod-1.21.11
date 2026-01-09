@@ -1,0 +1,37 @@
+{
+	"schemaVersion": 1,
+	"id": "ziansmod",
+	"version": "${version}",
+	"name": "Zian's Mod",
+	"description": "Test Mod",
+	"authors": [
+		"Zian4328"
+	],
+	"contact": {
+		"homepage": "https://fabricmc.net/",
+		"sources": "https://github.com/FabricMC/fabric-example-mod"
+	},
+	"license": "CC0-1.0",
+	"icon": "assets/ziansmod/icon.png",
+	"environment": "*",
+	"entrypoints": {
+		"main": [
+			"me.zian.ziansmod.ZiansMod"
+		],
+		"fabric-datagen": [
+			"me.zian.ziansmod.ZiansModDataGenerator"
+		],
+		"client": [
+			"me.zian.ziansmod.ModClient"
+		]
+	},
+	"mixins": [
+		"ziansmod.mixins.json"
+	],
+	"depends": {
+		"fabricloader": ">=0.18.4",
+		"minecraft": "~1.21.11",
+		"java": ">=21",
+		"fabric-api": "*"
+	}
+}
